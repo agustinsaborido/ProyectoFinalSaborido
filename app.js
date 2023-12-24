@@ -1,5 +1,4 @@
 // funcionalidad para los botones de Registro y Login
-
 document.getElementById("miBotonLogin").addEventListener("click", function() {
     window.location.href = "login.html";
   });
@@ -28,21 +27,21 @@ function ready(){
         button.addEventListener('click',eliminarItemCarrito);
     }
 
-    // Funcionalidad para el boton sumarcantidad
+    // Funcionalidad para el boton sumarCantidad
     let botonesSumarCantidad = document.getElementsByClassName('sumar-cantidad');
     for(let i=0;i<botonesSumarCantidad.length; i++){
         let button = botonesSumarCantidad[i];
         button.addEventListener('click',sumarCantidad);
     }
 
-     //Agrego funcionalidad al buton restar cantidad
+     // Funcionalidad para el boton restarCantidad
     let botonesRestarCantidad = document.getElementsByClassName('restar-cantidad');
     for(let i=0;i<botonesRestarCantidad.length; i++){
         let button = botonesRestarCantidad[i];
         button.addEventListener('click',restarCantidad);
     }
 
-    //Agregamos funcionalidad al boton Agregar al carrito
+    // Funcionalidad para el boton agregar al carrito
     let botonesAgregarAlCarrito = document.getElementsByClassName('boton-item');
     for(let i=0; i<botonesAgregarAlCarrito.length;i++){
         let button = botonesAgregarAlCarrito[i];

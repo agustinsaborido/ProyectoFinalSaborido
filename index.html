@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/escudo-independiente-rojo-logo-01531108BB-seeklogo.com.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo.css">
+    <title>TodoRojo / Indumentaria</title>
+</head>
+<body>
+    <header>
+        <h1>#TodoRojo</h1>
+        <div class="escudo">
+            <img src="./img/escudo-independiente-rojo-logo-01531108BB-seeklogo.com.png" alt="escudo" class="logo-img">
+        </div>
+        <h2>Tienda oficial del Club Atletico Independiente</h2>
+        
+        <nav>
+            <div class="right-content">
+              <button  id="miBotonLogin" class="login-button">Login</button>
+              <button  id="miBotonRegister" class="register-button">Register</button>
+            </div>
+        </nav>
+        
+        
+    </header>
+    
+    <section class="contenedor">
+        
+        <div class="contenedor-items">
+
+            <div class="item">
+                <span class="titulo-item">CAMISETA PREMATCH</span>
+                <img src="img/fotoremeraroja.avif" alt="" class="img-item">
+                <span class="precio-item">$51.999</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Buzo de Fútbol / Gris</span>
+                <img src="img/fotobuzogris.avif" alt="" class="img-item">
+                <span class="precio-item">$89.999</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Buzo de Fútbol / rojo</span>
+                <img src="img/fotobuzorojo.avif" alt="" class="img-item">
+                <span class="precio-item">$89.999</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">CAMISETA CAI 2023</span>
+                <img src="img/camisetacai2023.avif" alt="" class="img-item">
+                <span class="precio-item">$57.999</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">short de fútbol / blanco</span>
+                <img src="img/short-blanco.avif" alt="" class="img-item">
+                <span class="precio-item">$29.999</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">medias de fútbol / blancas</span>
+                <img src="img/medias-futbol-blanca.avif" alt="" class="img-item">
+                <span class="precio-item">$9.999</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">pantalón joggin / azul</span>
+                <img src="img/pantalon-joggin-azul.avif" alt="" class="img-item">
+                <span class="precio-item">$72.499</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">pantalón de fútbol training / gris</span>
+                <img src="img/pantalon-joggin-trainning-gris.avif" alt="" class="img-item">
+                <span class="precio-item">$75.999</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">medias de fútbol / azul</span>
+                <img src="img/medias-futbol-azul.avif" alt="" class="img-item">
+                <span class="precio-item">$10.999</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Medias de fútbol / rojas</span>
+                <img src="img/medias-futbol-rojas.avif" alt="" class="img-item">
+                <span class="precio-item">$10.999</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">medias de fútbol / violetas</span>
+                <img src="img/medias-futbol-violetas.avif" alt="" class="img-item">
+                <span class="precio-item">$10.999</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">gorra cai / azul</span>
+                <img src="img/gorra-cai.avif" alt="" class="img-item">
+                <span class="precio-item">$31.499</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            
+        </div>
+
+        
+        <div class="carrito" id="carrito">
+            <div class="header-carrito">
+                <h2>Tu Carrito</h2>
+            </div>
+
+            <div class="carrito-items">
+            </div>
+
+            <div class="carrito-total">
+                <div class="fila">
+                    <strong>Total</strong>
+                    <span class="carrito-precio-total">
+                        $120.000,00
+                    </span>
+                </div>
+                <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i> </button>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="app.js" async></script>
+
+
+<footer>
+    <div class="container">
+      <div class="footer-row">
+        <div class="footer-links">
+          <h6>Visitanos <hr> </h6>
+          
+          <h5>Sede Oficial - Avellaneda :</h5>
+          <p><img src="img/mapa.png" alt="maps" class="iconos">  <strong>Av. Mitre 470 (1870) </strong></p>
+          <p><img src="img/reloj.png" alt="reloj" class="iconos">  <strong>LUNES a VIERNES <br> de 9:00 hs a 18:00 hs <br> SÁBADO de 10:00 hs a 13:00 hs</strong></p>
+        </div>
+        <div class="footer-links">
+          <h6>Llamanos <hr></h6>
+          <p><img src="img/telefono.png" alt="phone" class="iconos"> <strong>4229-7600</strong></p>
+          <p><img src="img/email-png.png" alt="email" class="iconos"> <strong>socios@TodoRojo.com.ar</strong>
+          </p>
+        </div>
+        <div class="footer-links">
+          <h6>Seguinos <hr></h6>
+          <p><img src="img/facebook.png" alt="facebook" class="iconos"> <strong>@TodoRojo</strong> <br> </p>  <img src="img/instagram.png" alt="instagram"class="iconos"> <strong>@TodoRojo</strong></p>
+        </div>
+      </div>
+  
+      <div class="footer-row">
+        <div class="footer-links">
+          <h5>&copy;2023TodoRojo</h5>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+</html>

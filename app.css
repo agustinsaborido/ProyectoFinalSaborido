@@ -6,13 +6,13 @@
     font-family: 'Open Sans';
 }
 body{
-    background-color: rgb(160, 0, 0);
+    background-color:red;
     }
 
 header{
     background-size: cover;
     background-position:center;
-    background-color: rgb(151, 0, 0);
+    background-color: rgb(156, 1, 1);
     height: 350px;
     justify-content: center;
     text-align: center;
@@ -22,7 +22,7 @@ header{
         rgba(0,0,0,0.5)
             
         )
-        ,url(./img/fondoheader1.jpeg);
+        ,url(./img/fondoheader1-optimizado.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -151,7 +151,7 @@ nav {
 }
 
 .carrito{
-    border: 1px solid #666;
+    border: 1px solid #838383;
     width: 35%;
     margin-top: 30px;
     border-radius: 10px;
@@ -276,7 +276,24 @@ footer{
     justify-content: center;
     text-align: center;
     align-items: center; 
-    margin-top: 100px;
+    margin-top: 0;
+
+  }
+
+  #portadaroja{
+    margin: 0;
+    padding: 0;
+    height: 1100px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(./img/indepportada.jpg);
+        background-position-x: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    
+    
   }
     
     footer h5{
@@ -315,7 +332,7 @@ footer .iconos{
 
 
 /* SECCION RESPONSIVE */
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 390px) {
     .contenedor {
       display: block;
     }
@@ -324,12 +341,17 @@ footer .iconos{
     }
     .carrito{
         width: 100%;
+        display: block;
     }
+
+    .footer-row{
+        display: block;
+    }
+    footer{
+        height: 100%;
+    }
+
   }
-
-
-
-
 
 
 
